@@ -7,16 +7,17 @@ class Products {
         CATALOG.forEach(({ id, name, price, img }) => {
 
             htmlCatalog += `
-                <li>
-                    <span>${name}</span>
-                    <img src="${img}" >
-                    
+                <li class="products-element">
+                    <img class="products-element__img" src="${img}" />
+                    <span class="products-element__name">${name}</span>
+                    <span class="products-element__price">${price}</span>
+
                 </li>
             `;
         });
 
         const html = `
-            <ul>
+            <ul class="products-container">
                 ${htmlCatalog}
             </ul>
         `;
