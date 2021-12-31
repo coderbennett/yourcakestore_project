@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: flex-end;
     padding: 25px 20px;
-    background-color: var( --color-light);
+    background-color: var( --color-white);
     border: 1px dashed black;
 }
 .products-element__name {
@@ -21,10 +21,10 @@
     font-weight: 600;
     text-align: center;
     height: 100px;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 .products-element__img {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     margin-top: (var--spacing-medium);
     object-fit: cover;
@@ -33,6 +33,6 @@
     font-weight: 600;
     color: var(--color-pink);
     margin-top: (var--spacing-large);
-    color: var(--color-pink);
     text-align: center;
+    font-size: 1rem;
 }
