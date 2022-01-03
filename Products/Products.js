@@ -4,7 +4,7 @@ class Products {
     render() {
         let htmlCatalog = '';
 
-        CATALOG.forEach(({ id, name, price, img }) => {
+        CATALOG.forEach(({ id, name, price, img,}) => {
 
             htmlCatalog += `
                 <li class="products-element">
