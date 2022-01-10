@@ -14,34 +14,68 @@
         <!--the title tag will show on the tab in your browser-->
         <title>Your Cake Store</title>
         <!--this link tag connects the html with bootstrap-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+         crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+         crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+         crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+        crossorigin="anonymous"></script>
         <!--this link tag connects to the corresponding css file-->
         <link rel="stylesheet" href="index.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <!--twitter share script below-->
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </head>
     <body>
+        <!---div & script for facebook sharing compatibility-->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="6bxvnJqI"></script>
         <!--HEADER-->
         <header>
             <!---top navigation bar-->
-            <nav>
-                <!--unordered list of links for navbar-->
-                <ul>
-                    <li>
-                        <!--logo image-->
-                        <a href="index.html"><img id="navbar-logo" src="logo.png"></a>  
-                        <!--links to other pages-->
-                        <a href="Products/Products.html">All Products</a>
-                        <a href="#cakes">Cakes</a>
-                        <a href="/Products/cupcakes/Cupcakes.html">Cupcakes</a>
-                        <a href="#desserts">Desserts</a>
-                        <a href="#Cookies">Cookies</a>
-                        <a href="#special-offers">Special Offers</a>
-                        <a href="custom-order/custom-order.html">Custom Order</a>
-                        <a href="#contact">Contact Us</a>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#"><img id="navbar-logo" src="logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                </ul>
-            </nav>
-            <hr/>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about-us/about_us.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All Products
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Cakes</a>
+                        <a class="dropdown-item" href="/Products/cupcakes/Cupcakes.html">Cupcakes</a>
+                        <a class="dropdown-item" href="#">Pies</a>
+                        <a class="dropdown-item" href="#">Donuts</a>
+                        <a class="dropdown-item" href="#">Cookies</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Products/Products.html">All Products</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="blog/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact-us/contact-us.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
             <!--end of HEADER-->
         </header>
         <main>
@@ -50,22 +84,101 @@
                 <div class="container">
                     <h3>HOME</h3>
                     <br>
-                    <div class="row">
                         <!--bootstrap container class with 6width column-->
                         <h2>Popular Products</h2>
-                        <div class="col-6">
-                        </div>
-                        <!--bootstrap container class with 6width column-->
-                        <div class="col-6">
-                        </div>
+                            <div id="carouselPopularItems" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top" src="..." alt="Card image cap">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="..." alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="..." alt="Third slide">
+                                </div>
+                                </div>
+                            </div>
+                            <div class="row">
                     </div>
         </main>
         <footer>
         <!--FOOTER-->
-            <nav>
-        
+
+        <nav>
+
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <!--3width column for logo-->
+                        <div class="col-3">
+                            <img id="bottom-navbar-logo" src="logo.png"> 
+                        </div>
+                        <!--2width column for about us, blog, faq, contact-->
+                        <div class="col-2">
+                            <br>
+                            <div class="row">
+                               <a href="about-us/about_us.html">About us</a> 
+                            </div>
+                            <div class="row">
+                                <a href="blog/blog.html">Blog</a>
+                            </div>
+                            <div class="row">
+                                <a href="#">FAQ</a>
+                            </div>
+                            <div class="row">
+                                <a href="contact-us/contact-us.html">Contact Us</a>
+                            </div>
+                        </div>
+                        <!--3width column privacy policy & legal disclaimer-->
+                        <div class="col-3">
+                            <br>
+                            <div class="row">
+                                Privacy Policy
+                            </div>
+                            <div class="row">
+                                Legal Disclaimer
+                            </div>
+                        </div>
+                        <!--3width column address, telephone, pickup & delivery-->
+                        <div class="col-2">
+                            <br>
+                            <div class="row">
+                                11 Cake Drive, MN
+                            </div>
+                            <div class="row">
+                                999-555-4921
+                            </div>
+                            <div class="row">
+                                Pickup & Delivery
+                            </div>
+                        </div>
+                        <!--paragraph using bootstrap container class with 6width column-->
+                        <div class="col-2">
+                            <br>
+                            <div class="row">
+                                Social
+                            </div>
+                            <div class="row">
+                                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+                                <br>
+                                <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small">
+                                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
+                                </div>
+                                <br>
+                                <img src="instagram-logo.png">
+                            </div>
+                        </div>
+                    </div>
             </nav>
-            <small>Copyright 2021 Your Cake Store</small>
+                <small>Copyright 2021 Your Cake Store</small>
         <!--end of FOOTER-->
         </footer>
     </body>
