@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <!--this meta tag sets up a description for the page-->
+        <meta name="description" content="This is Your Cake Store's blog, 
+        where you can find articles on baking news and tips!">
+        <!--this meta tag sets me as the author of this page-->
+        <meta name="author" content="joey bennett">
+        <!--this meta tag sets up keywords (not necessary)-->
+        <meta name="keywords" content="Cake, Bakery, Desserts, Cookies, Pies">
+        <!--this meta tag allows the viewport to scale to the device width-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--the title tag will show on the tab in your browser-->
+        <title>Blog</title>
+        <!--this link tag connects the html with bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--this link tag connects to the corresponding css file-->
+        <link rel="stylesheet" href="blog.css">
+        <script src="js/bootstrap.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Sansita+Swashed:wght@300&display=swap');
+        </style>
+        <!--twitter share script below-->
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <!---div & script for facebook sharing compatibility-->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="6bxvnJqI"></script>
+        <!--HEADER-->
+        <header>
+            <!---top navigation bar-->
+            <div id="top-nav-placeholder">
+            </div>
+
+            <script>
+                $(function(){
+                $("#top-nav-placeholder").load("../top_navbar.html");
+                });
+            </script>
+            <!--custom orders header title-->
+            <h1>Blog</h1>
+            <!--end of HEADER-->
+        </header>
+        <!--MAIN-->
+        <main>
+            <!--first section of page-->
+            <section>
+                <div class="container">
+                    <p id="navigation_header"><b>HOME > ABOUT US</b></p>
+                </div>
+            </section>
+            <!--end of MAIN-->
+        </main>
+        <footer>
+        <!--FOOTER-->   
+            <div id="bottom-nav-placeholder">
+            </div>
+
+            <script>
+                $(function(){
+                $("#bottom-nav-placeholder").load("../bottom_navbar.html");
+                });
+            </script>
+            <!--end of FOOTER-->
+        </footer>
+    </body>
+</html>
