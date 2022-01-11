@@ -1,62 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>capcakes</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Sansita+Swashed:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!--Icon-->
-    <link rel="icon" type="image/png" href="../../images/cakeIcon.png">
+    <head>
+        <meta charset="UTF-8">
+
+        <!--this meta tag sets up a description for the page-->
+        <meta name="description" content="This is Your Cake Store's cupcakes page, where you can find information on our cupcakes collections.">
+        <!--this meta tag sets me as the author of this page-->
+        <meta name="author" content="elena zavyalova">
+        <!--this meta tag sets up keywords (not necessary)-->
+        <meta name="keywords" content="Cake, Bakery, Desserts, Cookies, Pies">
+        <!--this meta tag allows the viewport to scale to the device width-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Icon-->
+        <link rel="icon" type="image/png" href="../../images/cakeIcon.png">
+        <!--the title tag will show on the tab in your browser-->
+        <title>Cupcakes</title>
+        <!--this link tag connects the html with bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+        crossorigin="anonymous"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+        <!--Joey's google fonts link-->
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Sansita+Swashed:wght@300&display=swap');
+        </style>
+
+        <!--twitter share script below-->
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+        <!--meta tag was generated automatically when creating this document and I don't see it in Joey's UboutUsPage-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--my google fonts link-->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Sansita+Swashed:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <!--this link tag connects to the corresponding css file, took from Joey-->
+        <link rel="stylesheet" href="../../index.css">
     
-    <!--this link tag connects the html with bootstrap, took from Joey-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!--this link tag connects to the corresponding css file, took from Joey-->
-    <link rel="stylesheet" href="../cupcakes/../../index.css">
+        <!--Products CSS my global rules-->
+        <link rel="stylesheet" href="../css/index.css">
+    </head>
+
+    <body>
+
+        <!--HEADER-->
+        <header>
+            <!---top navigation bar-->
+            <div id="top-nav-placeholder">
+            </div>
+
+            <script>
+                $(function(){
+                $("#top-nav-placeholder").load("../../top_navbar.html");
+                });
+            </script>
+            <!--custom orders header title-->
+            <h1>Cupcakes Collections</h1>
+            <!--end of HEADER-->
+        </header>
+
+        <!--MAIN-->
+        <main>
+            <!--first section of page-->
+            <section>
+                <div class="container">
+                    <p id="navigation_header"><b>HOME > CUPCAKES</b></p>
+                </div>
+            </section>
+            
+            <div id="cupcakes"></div>
+
+            <!-- Constants and Utils-->
+            <script src="../constants/catalog.js"></script>
+            <script src="../constants/root.js"></script>
+            <script src="../utils/localStorageUtil.js"></script>
+
+            <script src="Cupcakes.js"></script>
+            <link rel="stylesheet" href="../Products.css">
+        </main>
     
-    <!--Products CSS global rules-->
-    <link rel="stylesheet" href="../css/index.css">
-</head>
+        <footer>
+            <!--FOOTER-->   
+            <div id="bottom-nav-placeholder"></div>
 
-<body>
+            <script>
+                $(function(){
+                $("#bottom-nav-placeholder").load("../../bottom_navbar.html");
+                });
+            </script>
+            <!--end of FOOTER-->
+        </footer>
 
-    <!--HEADER-->
-    <header>
-        <!---top navigation bar-->
-        <nav>
-            <!--unordered list of links for navbar-->
-            <ul>
-                <li>
-                    <!--logo image-->
-                    <a href="../../index.html"><img id="navbar-logo" src="../../logo.png"></a>  
-                    <!--links to other pages-->
-                    <a href="../Products.html">All Products</a>
-                    <a href="#cakes">Cakes</a>
-                    <a href="Cupcakes.html">Cupcakes</a>
-                    <a href="#desserts">Desserts</a>
-                    <a href="#Cookies">Cookies</a>
-                    <a href="#special-offers">Special Offers</a>
-                    <a href="custom-order/custom-order.html">Custom Order</a>
-                    <a href="#contact">Contact Us</a>
-                </li>
-            </ul>
-        </nav>
-        <hr/>
-        <!--end of HEADER-->
-    </header>
-
-    <div id="cupcakes"></div>
-
-    <!-- Constants and Utils-->
-    <script src="../constants/catalog.js"></script>
-    <script src="../constants/root.js"></script>
-    <script src="../utils/localStorageUtil.js"></script>
-
-    <script src="Cupcakes.js"></script>
-    <link rel="stylesheet" href="../Products.css">
-
-</body>
-
+    </body>
 </html>
