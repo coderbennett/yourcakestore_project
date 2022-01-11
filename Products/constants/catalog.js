@@ -34,49 +34,57 @@ const CATALOG = [
         name: 'Sweet Rainbow Cake',
         img: 'img-products/cakes/deva-williamson-m4A2KWBU7xI-unsplash.jpg',
         price: "$" + 49.99,
-    }, {
+    }, 
+    {
         id: 'el6',
         type: 'cake',
         name: 'Delicious Pink Cherry Cake',
         img: 'img-products/cakes/deva-williamson-ntfGWVbBiO0-unsplash.jpg',
         price: "$" + 39.99,
-    }, {
+    }, 
+    {
         id: 'el7',
         type: 'cake',
         name: 'Oreo & Donuts Rain Cake',
         img: 'img-products/cakes/deva-williamson-rHz-DkDgA1k-unsplash.jpg',
         price: "$" + 39.99,
-    }, {
+    }, 
+    {
         id: 'el8',
         type: 'cake',
         name: 'Yellow & Pink Soft Macarons Cake',
         img: 'img-products/cakes/deva-williamson-tW0Ix_Ajg6Y-unsplash.jpg',
         price: "$" + 59.99,
-    }, {
+    }, 
+    {
         id: 'el9',
         type: 'cake',
         name: 'Delicious Berries Cake',
         img: 'img-products/cakes/eugene-kuznetsov-E7eFTtfQR88-unsplash.jpg',
         price: "$" + 39.99,
-    }, {
+    }, 
+    {
         id: 'el10',
         type: 'cake',
         name: 'Three Chocolates Cake',
         img: 'img-products/cakes/kaouther-djouada-hcEDfkiVmMI-unsplash.jpg',
         price: "$" + 39.99,
-    }, {
+    }, 
+    {
         id: 'el11',
         type: 'cake',
         name: 'Fun Mood Cake',
         img: 'img-products/cakes/katie-rosario-QNyRp21hb5I-unsplash.jpg',
         price: "$" + 39.99,
-    }, {
+    }, 
+    {
         id: 'el12',
         type: 'cake',
         name: 'Sweet Trio Cakes',
         img: 'img-products/cakes/slashio-photography-0uBlylsBuWk-unsplash.jpg',
         price: "$" + 39.99,
-    }, {
+    }, 
+    {
         id: 'el13',
         type: 'cupcake',
         name: 'Rainbow Rain Cupcakes',
@@ -103,41 +111,90 @@ const CATALOG = [
         name: 'Sweet Rainbow Cupcake',
         img: 'img-products/cupcakes/deva-williamson-K2ZFPgTjMDI-unsplash.jpg',
         price: "From $" + 18.99 + " - $ 36.99",
-    }, {
+    }, 
+    {
         id: 'el17',
         type: 'cupcake',
         name: 'Fairy Tale Cupcakes',
         img: 'img-products/cupcakes/jennie-brown-MKBoRZEGeiM-unsplash.jpg',
         price: "From $" + 18.99 + " - $ 36.99",
-    }, {
+    }, 
+    {
         id: 'el18',
         type: 'cupcake',
         name: 'Chocolate Nut Happiness',
         img: 'img-products/cupcakes/jr-r-90HdOlGbjck-unsplash.jpg',
         price: "From $" + 18.99 + " - $ 36.99",
-    }, {
+    }, 
+    {
         id: 'el19',
         type: 'cupcake',
         name: 'Waffle On a Cream Cloud',
         img: 'img-products/cupcakes/lore-schodts-FIxdY7jOBus-unsplash.jpg',
         price: "From $" + 18.99 + " - $ 36.99",
-    }, {
+    }, 
+    {
         id: 'el20',
         type: 'cupcake',
         name: 'Red Velvet Cupcakes',
         img: 'img-products/cupcakes/luisana-zerpa-MJPr6nOdppw-unsplash.jpg',
         price: "From $" + 18.99 + " - $ 36.99",
-    }, {
+    }, 
+    {
         id: 'el21',
         type: 'cupcake',
         name: 'Blue Rose Cupcakes',
         img: 'img-products/cupcakes/natalie-chaney-FQJMhdEYXtA-unsplash.jpg',
         price: "From $" + 18.99 + " - $ 36.99",
-    }, {
+    }, 
+    {
         id: 'el22',
         type: 'cupcake',
         name: 'Cherry Mood Cupcakes',
         img: 'img-products/cupcakes/sara-cervera-zEwgRzJJIvk-unsplash.jpg',
         price: "From $" + 18.99 + " - $ 36.99",
     }, 
+    {
+        id: 'el23',
+        type: 'cookie',
+        name: 'Three Chocolate Cookies',
+        //upload images to github and make a link from there (simulate a server)
+        img: 'img-products/cookies/eiliv-sonas-aceron-3jNTCCeC7gI-unsplash.jpg',
+        price: "$" + 24.99,
+    },
+    {
+        id: 'el24',
+        type: 'cookie',
+        name: 'Christmas Tree Cookies',
+        img: 'img-products/cookies/jennifer-burk-l0-1r3xC2Xc-unsplash.jpg',
+        price: "$" + 19.99,
+    },
+    {
+        id: 'el25',
+        type: 'cookie',
+        name: 'Classic Vanilla & Chocolate Cookies',
+        img: 'img-products/cookies/julissa-capdevilla-tDoHiqXl9b8-unsplash.jpg',
+        price: "$" + 59.99,
+    },
+    {
+        id: 'el26',
+        type: 'cookie',
+        name: 'Rainbow Mockaroon',
+        img: 'img-products/cookies/mockaroon-bzLhhI3MpYY-unsplash.jpg',
+        price: "$" + 39.99,
+    },
+    {
+        id: 'el27',
+        type: 'cookie',
+        name: 'Vanilla And Chocolate Marble Cookies',
+        img: 'img-products/cookies/slashio-photography-UQR3Z3gBFsc-unsplash.jpg',
+        price: "$" + 49.99,
+    }, 
+    {
+        id: 'el28',
+        type: 'cookie',
+        name: 'Vanilla & Chocolate Hearts',
+        img: 'img-products/cookies/tanaphong-toochinda-_f8S_o9xQK8-unsplash.jpg',
+        price: "$" + 39.99,
+    },
 ];
