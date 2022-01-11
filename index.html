@@ -13,6 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--the title tag will show on the tab in your browser-->
         <title>Your Cake Store</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Sansita+Swashed:wght@400;500;600;700&display=swap" rel="stylesheet">
         <!--Icon-->
         <link rel="icon" type="image/png" href="Products/img-products/cakeIcon.png">
         <!--this link tag connects the html with bootstrap-->
@@ -41,8 +42,8 @@
         <!--HEADER-->
         <header>
             <!---top navigation bar-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"><img id="navbar-logo" src="images/logo.png"></a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+                <a class="navbar-brand" href="images/logo.png" alt="your cake store logo"> </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -80,41 +81,138 @@
             <!--end of HEADER-->
         </header>
         <main>
-            <!--first section of page-->
-            <section>
+            <!--first section of page, popular products carousel - joey-->
+            <section id="homePagePopularProducts">
+                <h3>HOME</h3>
+                <br>
+                <h1>Popular Products</h1>
                 <div class="container">
-                    <h3>HOME</h3>
-                    <br>
-                        <!--bootstrap container class with 6width column-->
-                        <h2>Popular Products</h2>
-                            <div id="carouselPopularItems" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="..." alt="Card image cap">
-                                        <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Item Name</h5>
+                                    <p class="card-text">$99.99</p>
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
                                 </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="..." alt="Second slide">
+                              </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Item Name</h5>
+                                    <p class="card-text">$99.99</p>
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
                                 </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="..." alt="Third slide">
+                              </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Item Name</h5>
+                                    <p class="card-text">$99.99</p>
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
                                 </div>
+                              </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Item Name</h5>
+                                  <p class="card-text">$99.99</p>
+                                  <a href="#" class="btn btn-primary">Add to Cart</a>
                                 </div>
-                            </div>
-                            <div class="row">
+                              </div>
+                        </div>
                     </div>
+                </div>
+            </section>
+            <!--second section of the home page, our story - worku-->
+            <section id="homePageOurStory">
+                <div class="container">
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/our-story.jpg">
+                        </div>
+                        <div class="col-6">
+                            <h1>Our story</h1>
+                            <div class="row">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                    nisi ut aliquip ex ea commodo consequat. </p>
+                                <a href="about-us/about_us.html" class="btn btn-primary">Read more</a>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--third section of the home page, what our customers say - alhaji-->
+            <section id="homePageWhatOurCustomersSay">
+                <h1>What Our Customers Say</h1>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                 nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                                  ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                                  velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                        </div>
+                        <div class="col-6">
+                            <img src="images/our-customers.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--fourth section of the home page, services - elena-->
+            <br>
+            <section id="homePageServices">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="images/icon1.png">
+                            <p><strong>Fresh and Handmade</strong></p>
+                            <p>Our products are prepared from fresh, 
+                                high quality ingredients</p>
+                        </div>
+                        <div class="col-3">
+                            <img src="images/icon2.png">
+                            <p><strong>Make Your Unique Products</strong></p>
+                            <p>We implement your dream - combine tastes
+                                 and decorate as you want</p>
+                        </div>
+                        <div class="col-3">
+                            <img src="images/icon3.png">
+                            <p><strong>Explore our Special Offers</strong></p>
+                            <p>Save money or try a new taste</p>
+                        </div>
+                        <div class="col-3">
+                            <img src="images/icon4.png">
+                            <p><strong>Next Day Pickup or Delivery</strong></p>
+                            <p>You can pick up an order yourself or 
+                                we will deliver it to you</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
         <!--FOOTER-->
-
         <nav>
-
             <section>
                 <div class="container">
                     <div class="row">
@@ -178,8 +276,10 @@
                             </div>
                         </div>
                     </div>
-            </nav>
-                <small>Copyright 2021 Your Cake Store</small>
+                </div>
+            </section>
+        </nav>
+        <small>Copyright 2021 Your Cake Store</small>
         <!--end of FOOTER-->
         </footer>
     </body>
