@@ -16,7 +16,6 @@ h1 {
     float: left;
     font-family: 'Sansita Swashed', cursive;
     margin-left: 2%;
-    margin-top: 10px;
 }
 
 a:hover {
@@ -33,7 +32,7 @@ header h1 {
     color:lightgoldenrodyellow;
     text-align: center;
     width: 100%;
-    margin-top: 464px;
+    margin-top: 380px;
     font-family: 'Sansita Swashed', cursive;
 }
 
