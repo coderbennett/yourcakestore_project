@@ -46,6 +46,10 @@ div h3,h2 {
     font-family: 'Sansita Swashed', cursive;
 }
 
+#article-block-2 {
+    background: url(../images/cake_background.png) repeat fixed center;
+}
+
 div img {
     width: 80%;
     padding: 15px 15px;
