@@ -158,7 +158,6 @@ const CATALOG = [
         id: 'el23',
         type: 'cookie',
         name: 'Three Chocolate Cookies',
-        //upload images to github and make a link from there (simulate a server)
         img: 'img-products/cookies/eiliv-sonas-aceron-3jNTCCeC7gI-unsplash.jpg',
         price: "$" + 24.99,
     },
@@ -201,7 +200,6 @@ const CATALOG = [
         id: 'el29',
         type: 'dessert',
         name: 'Delicious Cream-Berry Baskets',
-        //upload images to github and make a link from there (simulate a server)
         img: 'img-products/desserts/bruna-branco-FWaV69D5b8k-unsplash.jpg',
         price: "$" + 24.99,
     },
@@ -258,7 +256,6 @@ const CATALOG = [
         id: 'el37',
         type: 'pie',
         name: 'Delicious Orange Pie',
-        //upload images to github and make a link from there (simulate a server)
         img: 'img-products/pies/alex-lvrs-aX_ljOOyWJY-unsplash.jpg',
         price: "$" + 19.99,
     },
