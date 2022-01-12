@@ -1,14 +1,14 @@
-class Pies {
+class Cookies {
 
     render() {
-        let htmlPies = '';
+        let htmlCookies = '';
 
         CATALOG.forEach(({ id, type, name, img, price }) => {
-            if (type === 'pie') {
+            if (type === 'cookie') {
                 
-                htmlPies += `
+                htmlCookies += `
                     <li class="products-element">
-                        <img class="products-element__img" src="../${img}" />
+                        <img class="products-element__img" src="${img}" />
                         <span class="products-element__name">${name}</span>
                         <span class="products-element__price">${price}</span>
                     </li>
@@ -18,13 +18,13 @@ class Pies {
 
         const html = `
             <ul class="products-container">
-                ${htmlPies}
+                ${htmlCookies}
             <ul>
         `;
 
-        ROOT_PIES.innerHTML = html;
+        ROOT_COOKIES.innerHTML = html;
     }
 }
 
-const piesPage = new Pies();
-piesPage.render();
+const cookiesPage = new Cookies();
+cookiesPage.render();
