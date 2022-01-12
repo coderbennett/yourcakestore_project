@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
 
         <!--this meta tag sets up a description for the page-->
-        <meta name="description" content="This is Your Cake Store's cookies page, where you can find information on our cookies collections.">
+        <meta name="description" content="This is Your Cake Store's desserts page, where you can find information on our desserts collections.">
         <!--this meta tag sets me as the author of this page-->
         <meta name="author" content="elena zavyalova">
         <!--this meta tag sets up keywords (not necessary)-->
@@ -13,9 +13,9 @@
         <!--this meta tag allows the viewport to scale to the device width-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Icon-->
-        <link rel="icon" type="image/png" href="../../images/cakeIcon.png">
+        <link rel="icon" type="image/png" href="../images/cakeIcon.png">
         <!--the title tag will show on the tab in your browser-->
-        <title>Cookies</title>
+        <title>Desserts</title>
         <!--this link tag connects the html with bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
@@ -48,10 +48,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Sansita+Swashed:wght@400;500;600;700&display=swap" rel="stylesheet">
 
         <!--this link tag connects to the corresponding css file, took from Joey-->
-        <link rel="stylesheet" href="../../index.css">
-    
-        <!--Products CSS my global rules-->
-        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../index.css">
+
     </head>
 
     <body>
@@ -64,11 +62,11 @@
 
             <script>
                 $(function(){
-                $("#top-nav-placeholder").load("../../top_navbar.html");
+                $("#top-nav-placeholder").load("../top_navbar.html");
                 });
             </script>
             <!--custom orders header title-->
-            <h1>Cookies</h1>
+            <h1>Desserts</h1>
             <!--end of HEADER-->
         </header>
 
@@ -77,19 +75,19 @@
             <!--first section of page-->
             <section>
                 <div class="container">
-                    <p id="navigation_header"><b>HOME > COOKIES</b></p>
+                    <p id="navigation_header"><b>HOME > DESSERTS</b></p>
                 </div>
             </section>
             
-            <div id="cookies"></div>
+            <div id="desserts"></div>
 
             <!-- Constants and Utils-->
-            <script src="../constants/catalog.js"></script>
-            <script src="../constants/root.js"></script>
-            <script src="../utils/localStorageUtil.js"></script>
+            <script src="constants/catalog.js"></script>
+            <script src="constants/root.js"></script>
+            <script src="utils/localStorageUtil.js"></script>
 
-            <script src="Cookies.js"></script>
-            <link rel="stylesheet" href="../Products.css">
+            <script src="Desserts.js"></script>
+            <link rel="stylesheet" href="Products.css">
         </main>
     
         <footer>
@@ -98,7 +96,7 @@
 
             <script>
                 $(function(){
-                $("#bottom-nav-placeholder").load("../../bottom_navbar.html");
+                $("#bottom-nav-placeholder").load("../bottom_navbar.html");
                 });
             </script>
             <!--end of FOOTER-->

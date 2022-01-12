@@ -1,14 +1,14 @@
-class Cakes {
+class Desserts {
 
     render() {
-        let htmlCakes = '';
+        let htmlDesserts = '';
 
         CATALOG.forEach(({ id, type, name, img, price }) => {
-            if (type === 'cake') {
+            if (type === 'dessert') {
                 
-                htmlCakes += `
+                htmlDesserts += `
                     <li class="products-element">
-                        <img class="products-element__img" src="../${img}" />
+                        <img class="products-element__img" src="${img}" />
                         <span class="products-element__name">${name}</span>
                         <span class="products-element__price">${price}</span>
                     </li>
@@ -18,13 +18,13 @@ class Cakes {
 
         const html = `
             <ul class="products-container">
-                ${htmlCakes}
+                ${htmlDesserts}
             <ul>
         `;
 
-        ROOT_CAKES.innerHTML = html;
+        ROOT_DESSERTS.innerHTML = html;
     }
 }
 
-const cakesPage = new Cakes();
-cakesPage.render();
+const dessertsPage = new Desserts();
+dessertsPage.render();
