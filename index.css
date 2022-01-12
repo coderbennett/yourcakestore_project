@@ -50,6 +50,7 @@ h3 {
 #navigation_header {
     text-align: center;
     margin: var(--spacing-large) auto;
+    font-size: 0.8rem;
 }
 
 header ul {
