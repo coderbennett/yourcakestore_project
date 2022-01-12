@@ -19,20 +19,23 @@ body {
     background-color: var(--color-white);
 }
 
-html {
-    margin: 0;
-    padding: 0;
+.navbar-brand {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+    margin-top: -64px;
 }
 
-header {
-    width: 100%;
-    height: 600px;
-    background: url(images/mainPage4.jpg) no-repeat center/100%;
-    margin-top: 0px;
+.jumbotron {
+    background: url(images/mainPage4.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
 }
 
-header nav {
-    margin-top: 16px;
+header .jumbotron nav {
+    margin-top: -16px;
+    border-radius: 6px;
 }
 
 h1 {
@@ -73,11 +76,6 @@ a:hover {
     transition: 0.5s;
 }
 
-#navbar-logo {
-    width: 15%;
-    height: 15%;
-}
-
 header h1 {
     color:lightgoldenrodyellow;
     text-align: center;
@@ -101,28 +99,18 @@ footer {
 }
 
 #homePageOurStory {
-    background: url(images/cake_background.png) repeat fixed center;
+    background: url(images/cake_background.png);
 }
 
 #homePageServices img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 35%;
-    
+    width: 35%;  
 }
 
 #homePageServices p {
     text-align: center;
-}
-
-#form-div {
-    background-color:lightpink;
-    border-radius: 1%;
-}
-
-table {
-    border: 1px solid black;
 }
 
 #bottom-navbar-logo {

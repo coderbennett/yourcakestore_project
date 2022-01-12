@@ -4,12 +4,6 @@ body,html {
     font-family: 'Noto Sans', sans-serif;
 }
 
-header {
-    width: 100%;
-    height: 600px;
-    background: url(../images/blog_header.jpg) no-repeat center/100%;
-}
-
 h1 {
     position: absolute;
     padding: 3px;
@@ -22,6 +16,34 @@ a:hover {
     color:lightyellow;
     transition: 0.5s;
 }
+
+
+.navbar-brand {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+    margin-top: -64px;
+  }
+  
+  .jumbotron {
+    background: url(../images/blog_header.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  header .jumbotron nav {
+      margin-top: -16px;
+      border-radius: 6px;
+  }
+  
+  header .jumbotron h1 {
+    color:lightgoldenrodyellow;
+    text-align: center;
+    width: 100%;
+    margin-top: 420px;
+    font-family: 'Sansita Swashed', cursive;
+  }
 
 #navbar-logo {
     width: 20%;
