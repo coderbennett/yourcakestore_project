@@ -19,6 +19,10 @@ body {
     background-color: var(--color-white);
 }
 
+.nav > li > a:hover{
+    color:var(--color-pink);
+}
+
 .navbar-brand {
     height: auto;
     width: auto;
@@ -111,7 +115,7 @@ header h1 {
     color:lightgoldenrodyellow;
     text-align: center;
     width: 100%;
-    margin-top: 520px;
+    margin-top: 500px;
 }
 
 div h3,h2 {
@@ -178,7 +182,7 @@ div h3,h2 {
 }
 
 @media (max-width: 768px) {
-    #ourStoryImage, #customersImage {
+    #ourStoryImage, #customersImage, #kneadingDoughImage, #article1Image, #article2Image, #article3Image {
         display: none;
     }
 }
@@ -216,7 +220,8 @@ footer {
 #bottom-navbar-logo {
     height: auto;
     width: auto;
-    max-height: 126px;
-    max-width: 250px;
+    min-width: 150px;
+    max-width: 300px;
+    margin-left: -64px;
 }
 
