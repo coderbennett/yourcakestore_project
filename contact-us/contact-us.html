@@ -94,77 +94,26 @@
                 </div>
             </section>
             <!--new section for the custom order form with a different background-->
-            <section>
-                <div class="container">
-                    <!--this row of the container holds an image in the first column,
-                    then the entire order form in the second column-->
-                    <div  class="row">
-                        <!--this column has the image-->
-                        <div class="col-4">
-                            <img src="../images/custom-order-form-img.jpg"/>
-                        </div>
-                        <!--this column has the header for the order form-->
-                        <div class="col-8">
-                            <h2>Custom Order Form</h2>
-                            <!--new inside second column for the order form-->
-                            <div class="row">
-                                <!--first column with label-->
-                                <div class="col-4">
-                                    <p>First and Last Name</p>
-                                </div>
-                                <!--second column with input field-->
-                                <div class="col-8">
-                                    <!--QUESTION/CONCERN ABOUT FORM TAG HERE:
-                                    should it be around the input fields individually?
-                                    should it be around the entire form, divs and all?
-                                    i think it is the second option but I will test
-                                    this later-->
-                                    <form>
-                                        <input type="text" value="Jane Doe"/>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <!--first column with label-->
-                                <div class="col-4">
-                                    <p>Phone Number</p>
-                                </div>
-                                <!--second column with input field-->
-                                <div class="col-8">
-                                    <form>
-                                        <input type="text" value="000-000-0000"/>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <!--first column with label-->
-                                <div class="col-4">
-                                    <p>Email</p>
-                                </div>
-                                <!--second column with input field-->
-                                <div class="col-8">
-                                    <form>
-                                        <input type="text" value="your-email@email.com"/>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <!--first column with label-->
-                                <div class="col-4">
-                                    <p>Instructions</p>
-                                </div>
-                                <!--second column with input field-->
-                                <div class="col-8">
-                                    <form>
-                                        <textarea rows="10" cols="30">Detailed instructions here.</textarea>
-                                        <input type="submit"/>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <form style="margin:auto; max-width:60%;">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">First and Last Name</label>
+                  <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="cake baker">
                 </div>
-            </section>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Phone Number</label>
+                  <input type="phone" class="form-control" id="exampleFormControlInput2" placeholder="999-555-4921">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Detailed Instructions</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="3 layer red velvet cake, vanilla frosting"></textarea>
+                </div>
+                <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              <br>
             <!--end of MAIN-->
         </main>
         <footer>
