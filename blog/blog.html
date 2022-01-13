@@ -31,6 +31,7 @@
        crossorigin="anonymous"></script>
         <!--this link tag connects to the corresponding css file-->
         <link rel="stylesheet" href="blog.css">
+        <link rel="stylesheet" href="../index.css">
         <script src="js/bootstrap.js"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <style>
@@ -45,19 +46,18 @@
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="6bxvnJqI"></script>
         <!--HEADER-->
         <header>
-            <div class="jumbotron">
+            <div id="blogJumbotron" class="jumbotron">
                 <!---top navigation bar-->
                 <div id="top-nav-placeholder">
                 </div>
-    
+            <!--custom orders header title-->
+            <h1>Blog</h1>
                 <script>
                     $(function(){
                     $("#top-nav-placeholder").load("../top_navbar.html");
                     });
                 </script>
             </div>
-            <!--custom orders header title-->
-            <h1>Blog</h1>
             <!--end of HEADER-->
         </header>
         <!--MAIN-->
@@ -86,7 +86,7 @@
                         your paleo donut? We got you covered!
                         </p>
                         <br>
-                        <button>Read more</button>
+                        <a id="article1Btn" href="" class="btn btn-primary">Read more</a>
                     </div>
                     <div class="col-4">
                         <img src="../images/blog_photo2.jpg">
@@ -116,7 +116,7 @@
                             you can always count on Your Cake Store to have something freshly
                             baked and ready for you to pick up.</p>
                             <br>
-                            <button>Read more</button>
+                            <a id="article2Btn" href="" class="btn btn-primary">Read more</a>
                     </div>
                     <!--empty section for padding-->
                     <div class="col-2">
@@ -140,7 +140,7 @@
                         your paleo donut? We got you covered!
                         </p>
                         <br>
-                        <button>Read more</button>
+                        <a id="article3Btn" href="" class="btn btn-primary">Read more</a>
                     </div>
                     <!--table using bootstrap container class with 6width column-->
                     <div class="col-4">
