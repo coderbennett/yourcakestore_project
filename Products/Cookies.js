@@ -19,7 +19,7 @@ class Cookies {
         const html = `
             <ul class="products-container">
                 ${htmlCookies}
-            <ul>
+            </ul>
         `;
 
         ROOT_COOKIES.innerHTML = html;
