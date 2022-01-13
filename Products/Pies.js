@@ -19,7 +19,7 @@ class Pies {
         const html = `
             <ul class="products-container">
                 ${htmlPies}
-            <ul>
+            </ul>
         `;
 
         ROOT_PIES.innerHTML = html;

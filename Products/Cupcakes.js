@@ -19,7 +19,7 @@ class Cupcakes {
         const html = `
             <ul class="products-container">
                 ${htmlCupcakes}
-            <ul>
+            </ul>
         `;
 
         ROOT_CUPCAKES.innerHTML = html;

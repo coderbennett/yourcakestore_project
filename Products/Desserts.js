@@ -19,7 +19,7 @@ class Desserts {
         const html = `
             <ul class="products-container">
                 ${htmlDesserts}
-            <ul>
+            </ul>
         `;
 
         ROOT_DESSERTS.innerHTML = html;
