@@ -75,19 +75,45 @@
             <!--first section of page-->
             <section>
                 <div class="container">
-                    <p id="navigation_header"><b>HOME > PRODUCTS</b></p>
+                    <p id="navigation_header"><b>Popular Products</b></p>
                 </div>
             </section>
             
+
             <div id="populars"> </div>
 
-            <!-- Constants and Utils-->
-            <script src="../Products/constants/catalog.js"></script>
-            <script src="rootPopulars.js"></script>
-            <script src="../Products/utils/localStorageUtil.js"></script>
-
-            <script src="Populars.js"></script>
-            <link rel="stylesheet" href="Populars.css">
+            <div class="populars_slider">
+                <div class="slide">
+                    <div class="image" style="background-image: url(https://images.unsplash.com/photo-1535141192574-5d4897c12636?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2FrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);"></div>
+                    <div class="name">Supper Cake</div>
+                    <div class="price">$ 100</div>
+                </div>
+                <div class="slide">
+                    <div class="image" style="background-image: url(https://images.unsplash.com/photo-1535141192574-5d4897c12636?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2FrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);"></div>
+                    <div class="name">Supper Cake</div>
+                    <div class="price">$ 200</div>
+                </div>
+                <div class="slide">
+                    <div class="image" style="background-image: url(https://images.unsplash.com/photo-1535141192574-5d4897c12636?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2FrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);"></div>
+                    <div class="name">Supper Cake</div>
+                    <div class="price">$ 300</div>
+                </div>
+                <div class="slide">
+                    <div class="image" style="background-image: url(https://images.unsplash.com/photo-1535141192574-5d4897c12636?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2FrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);"></div>
+                    <div class="name">Supper Cake</div>
+                    <div class="price">$ 400</div>
+                </div>
+                <div class="slide">
+                    <div class="image" style="background-image: url(https://images.unsplash.com/photo-1535141192574-5d4897c12636?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2FrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);"></div>
+                    <div class="name">Supper Cake</div>
+                    <div class="price">$ 500</div>
+                </div>
+                <div class="slide">
+                    <div class="image" style="background-image: url(https://images.unsplash.com/photo-1535141192574-5d4897c12636?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2FrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);"></div>
+                    <div class="name">Supper Cake</div>
+                    <div class="price">$ 600</div>
+                </div>
+            </div>
 
         </main>
     
@@ -102,6 +128,19 @@
             </script>
             <!--end of FOOTER-->
         </footer>
+
+            <!-- Constants and Utils-->
+            <script src="../Products/constants/catalog.js"></script>
+            <script src="rootPopulars.js"></script>
+            <script src="../Products/utils/localStorageUtil.js"></script>
+
+           <!-- Click Carusel / Clider-->
+           <link rel="stylesheet" href="slick/slick.css">
+           <link rel="stylesheet" href="slick/slick-theme.css">
+           <script src="slick/slick.min.js"></script>
+
+            <link rel="stylesheet" href="Populars.css">
+            <script src="Populars.js"></script>
 
     </body>
 </html>

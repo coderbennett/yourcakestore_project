@@ -34,23 +34,33 @@ body {
 }
 
 #cakesJumbotron {
-    background: url(images/CakesMainPage.jpg) no-repeat center !important;
+    background: url(images/CakesMainPage.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
 }
 
 #piesJumbotron {
-    background: url(images/PiesMainPage.jpg) no-repeat center !important;
+    background: url(images/PiesMainPage.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
 }
 
 #cupcakesJumbotron {
-    background: url(images/CupcakesMainPage.jpg) no-repeat center !important;
+    background: url(images/CupcakesMainPage.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
 }
 
 #cookiesJumbotron {
-    background: url(images/cookiesMainPage.jpg) no-repeat center !important;
+    background: url(images/cookiesMainPage.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
 }
 
 #dessertsJumbotron {
-    background: url(images/dessertMainPage.jpg) no-repeat center !important;
+    background: url(images/dessertMainPage.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
 }
 
 header .jumbotron nav {
