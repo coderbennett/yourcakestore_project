@@ -31,6 +31,7 @@
        crossorigin="anonymous"></script>
         <!--this link tag connects to the corresponding css file-->
         <link rel="stylesheet" href="contact-us.css">
+        <link rel="stylesheet" href="../index.css">
         <script src="js/bootstrap.js"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <!--twitter share script below-->
@@ -42,30 +43,28 @@
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="6bxvnJqI"></script>
         <!--HEADER-->
         <header>
-            <div class="jumbotron">
+            <div id="contactJumbotron" class="jumbotron">
                 <!---top navigation bar-->
                 <div id="top-nav-placeholder">
                 </div>
-
+            <!--custom orders header title-->
+            <h1>Contact Us</h1>
                 <script>
                     $(function(){
                     $("#top-nav-placeholder").load("../top_navbar.html");
                     });
                 </script>
             </div>
-            <!--custom orders header title-->
-            <h1>Contact Us</h1>
-            <hr/>
             <!--end of HEADER-->
         </header>
         <!--MAIN-->
         <main>
             <!--first section of page-->
             <section>
-                <div class="container">
+                <div id="contactFirstSection" class="container">
                     <p id="navigation_header"><b>HOME > CONTACT US</b></p>
                     <br>
-                    <div class="row">
+                    <div  class="row">
                         <!--paragraph using bootstrap container class with 6width column-->
                         <div class="col-6">
                             <p>Having trouble finding what you're looking for?</p>

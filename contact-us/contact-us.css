@@ -1,53 +1,7 @@
-body,html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans', sans-serif;
-}
-
-.navbar-brand {
-    height: auto;
-    width: auto;
-    max-height: 72px;
-    max-width: 250px;
-    margin-top: -64px;
-}
-
-.jumbotron {
-    background: url(../images/contact-us-header-img.jpg) no-repeat center;
+#contactJumbotron {
+    background: url(../images/contact-us-jumbotron.jpg) no-repeat center;
     background-size: cover;
     height: 100vh;
-}
-
-header .jumbotron nav {
-    margin-top: -16px;
-    border-radius: 6px;
-}
-
-h1 {
-    position: absolute;
-    padding: 3px;
-    float: left;
-    font-family: 'Sansita Swashed', cursive;
-    margin-left: 2%;
-    margin-top: 10px;
-}
-
-a:hover {
-    color:lightyellow;
-    transition: 0.5s;
-}
-
-#navbar-logo {
-    width: 20%;
-    height: 20%;
-}
-
-header h1 {
-    color:lightgoldenrodyellow;
-    text-align: left;
-    width: 100%;
-    margin-top: 380px;
-    font-family: 'Sansita Swashed', cursive;
 }
 
 #custom-order-instructions {
@@ -55,23 +9,9 @@ header h1 {
     width: 60%;
     text-align: center;
 }
-#navigation_header {
-    text-align: center;
-}
-div h3,h2 {
-    text-align: center;
-    padding: 36px 36px;
-    font-family: 'Sansita Swashed', cursive;
-}
 
-div img {
-    width: 80%;
-    padding: 15px 15px;
-}
-
-footer {
-    background-color:#333;
-    color:lightyellow;
+#contactFirstSection {
+    margin: auto;
 }
 
 table {
