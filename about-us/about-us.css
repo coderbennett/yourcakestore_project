@@ -1,127 +1,26 @@
-body,html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans', sans-serif;
-}
-
-h1 {
-    position: absolute;
-    padding: 3px;
-    float: left;
-    font-family: 'Sansita Swashed', cursive;
-    margin-left: 2%;
-    margin-top: 10px;
-}
-
-a:hover {
-    color:lightyellow;
-    transition: 0.5s;
-}
-
-.navbar-brand {
-  height: auto;
-  width: auto;
-  max-height: 72px;
-  max-width: 250px;
-  margin-top: -64px;
-}
-
-.jumbotron {
-  background: url(../images/about_us_header.jpg) no-repeat center;
+#aboutUsJumbotron {
+  background: url(../images/about-us-jumbotron.jpg) no-repeat center;
   background-size: cover;
   height: 100vh;
 }
 
-header .jumbotron nav {
-    margin-top: -16px;
-    border-radius: 6px;
+#aboutUsImageSection {
+  background: url(../images/about-us-section-image.jpg) no-repeat center;
+  background-size: cover;
+  margin-top: 64px;
+  height: 100vh;
 }
 
-header .jumbotron h1 {
-  color:lightgoldenrodyellow;
-  text-align: center;
-  width: 100%;
-  margin-top: 420px;
-  font-family: 'Sansita Swashed', cursive;
+#aboutFinalSection {
+  margin: auto;
 }
 
-#navigation_header {
-    text-align: center;
+#aboutUsCupcakes {
+  margin: auto;
+  margin-bottom: 64px;
 }
 
-#teamCards .card {
-    margin: 0 auto; 
-    float: none; 
-    margin-bottom: 10px; 
+#aboutUsCupcakes img {
+  width: 360px;
+  height: 360px;
 }
-
-div h3,h2 {
-    text-align: center;
-    padding: 36px 36px;
-    font-family: 'Sansita Swashed', cursive;
-}
-
-div img {
-    width: 80%;
-    padding: 15px 15px;
-}
-
-footer {
-    background-color:#333;
-    color:lightyellow;
-}
-    
-*, *:before, *:after {
-    box-sizing: inherit;}
-  
-  
-  .column {
-    float: left;
-    width: 25%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
-  
-  .p{
-      color:aqua;
-  
-  }
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-  }
-  
-  .about-section {
-    padding: 50px;
-    text-align: center;
-  }
-  
-  .container {
-    padding: 0 16px;
-  }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: blue;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 80%;
-  }
-  
-  .button:hover {
-    background-color: #555;
-  }

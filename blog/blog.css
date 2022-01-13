@@ -1,84 +1,16 @@
-body,html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans', sans-serif;
-}
 
-h1 {
-    position: absolute;
-    padding: 3px;
-    float: left;
-    font-family: 'Sansita Swashed', cursive;
-    margin-left: 2%;
-}
-
-a:hover {
-    color:lightyellow;
-    transition: 0.5s;
-}
-
-
-.navbar-brand {
-    height: auto;
-    width: auto;
-    max-height: 72px;
-    max-width: 250px;
-    margin-top: -64px;
-  }
   
-  .jumbotron {
-    background: url(../images/blog_header.jpg) no-repeat center;
-    background-size: cover;
-    height: 100vh;
-  }
-  
-  header .jumbotron nav {
-      margin-top: -16px;
-      border-radius: 6px;
-  }
-  
-  header .jumbotron h1 {
-    color:lightgoldenrodyellow;
-    text-align: center;
-    width: 100%;
-    margin-top: 420px;
-    font-family: 'Sansita Swashed', cursive;
-  }
-
-#navbar-logo {
-    width: 20%;
-    height: 20%;
+#blogJumbotron {
+background: url(../images/blog_header.jpg) no-repeat center;
+background-size: cover;
+height: 100vh;
 }
 
-header h1 {
-    color:lightgoldenrodyellow;
-    text-align: center;
-    width: 100%;
-    margin-top: 380px;
-    font-family: 'Sansita Swashed', cursive;
-}
-
-#navigation_header {
-    text-align: center;
-}
-
-div h3,h2 {
-    text-align: center;
-    padding: 36px 36px;
-    font-family: 'Sansita Swashed', cursive;
+#article1Btn, #article2Btn, #article3Btn {
+    background: var(--color-pink);
+    border: 1px solid var(--color-pink);
 }
 
 #article-block-2 {
     background: url(../images/cake_background.png) repeat fixed center;
 }
-
-div img {
-    width: 80%;
-    padding: 15px 15px;
-}
-
-footer {
-    background-color:#333;
-    color:lightyellow;
-}
-
