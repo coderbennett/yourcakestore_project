@@ -33,6 +33,26 @@ body {
     height: 100vh;
 }
 
+#cakesJumbotron {
+    background: url(images/CakesMainPage.jpg) no-repeat center !important;
+}
+
+#piesJumbotron {
+    background: url(images/PiesMainPage.jpg) no-repeat center !important;
+}
+
+#cupcakesJumbotron {
+    background: url(images/CupcakesMainPage.jpg) no-repeat center !important;
+}
+
+#cookiesJumbotron {
+    background: url(images/cookiesMainPage.jpg) no-repeat center !important;
+}
+
+#dessertsJumbotron {
+    background: url(images/dessertMainPage.jpg) no-repeat center !important;
+}
+
 header .jumbotron nav {
     margin-top: -16px;
     border-radius: 6px;
@@ -89,6 +109,15 @@ div h3,h2 {
     padding: 36px 36px;
 }
 
+@media (max-width: 768px) {
+    #ourStoryImage {
+        display: none;
+    }
+    #customersImage {
+        display: none;
+    }
+}
+
 div img {
     width: 80%;
     padding: 15px 15px;
@@ -114,6 +143,14 @@ footer {
     text-align: center;
 }
 
-#bottom-navbar-logo {
-    object-fit: center;
+#serviceIcon1, #serviceIcon2, #serviceIcon3, #serviceIcon4 {
+    margin: auto;
 }
+
+#bottom-navbar-logo {
+    height: auto;
+    width: auto;
+    max-height: 126px;
+    max-width: 250px;
+}
+
