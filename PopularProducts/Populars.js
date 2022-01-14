@@ -4,22 +4,22 @@ class Populars {
         let htmlPopulars = '';
 
         CATALOG.forEach(({ id, type, name, img, price }) => {
-            if (id === 'el3' || id === 'el6' || id === 'el9' || id === 'el12' || id === 'el15' || id === 'el18') {
+            if (id === 'el3' || id === 'el6' || id === 'el9' || id === 'el12' || id === 'el15' || id === 'el18' || id === 'el21' || id === 'el25' || id === 'el30') {
 
                 htmlPopulars += `
-                    <div class="products-element slide">
+                    <li class="products-element slide">
                         <img class="products-element__img" src="../Products/${img}" />
-                        <span class="products-element__name">${name}</span>
-                        <span class="products-element__price">${price}</span>
-                    </div>
+                        <div class="products-element__name">${name}</div>
+                        <div class="products-element__price">${price}</div>
+                    </li>
                 `;
             }
         });
 
         const html = `
-            <div class="products-container populars_slider">
+            <ul class="products-container populars_slider">
                 ${htmlPopulars}
-            </div>
+            </ul>
         `;
           
         ROOT_POPULARS.innerHTML = html;
