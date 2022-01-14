@@ -36,6 +36,8 @@ $(function() {
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
+        prevArrow: '<span class="prev_arrow"><i class="fas fa-angle-left"></i></span>',
+        nextArrow: '<span class="next_arrow"><i class="fas fa-angle-right"></i></span>',
         responsive: [
             {
               breakpoint: 1024,
