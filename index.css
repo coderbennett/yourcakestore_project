@@ -139,40 +139,6 @@ div h3,h2 {
     border: 1px solid var(--color-pink);
 }
 
-#indexCard1, #indexCard2, #indexCard3 {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 25px 20px;
-    background-color: var( --color-white);
-    border: 1px dashed black;
-}
-
-#indexCard1 img, #indexCard2 img, #indexCard3 img {
-    width: 100%;
-    height: 100%;
-    margin-top: (var--spacing-medium);
-    object-fit: cover;
-}
-
-#indexCard1 h1, #indexCard2 h1, #indexCard3 h1 {
-    margin-bottom: auto;
-    margin-top: var(--spacing-large);
-    font-family: 'Sansita Swashed', cursive;
-    font-weight: 600;
-    text-align: center;
-    height: 100px;
-    font-size: 1.3rem;
-}
-
-#indexCard1 p, #indexCard2 p, #indexCard3 p {
-    font-weight: 600;
-    color: var(--color-pink);
-    margin-top: (var--spacing-large);
-    text-align: center;
-    font-size: 1rem;
-}
 
 @media (max-width: 768px) {
     #ourStoryImage, #customersImage, #kneadingDoughImage, #article1Image, #article2Image, #article3Image {

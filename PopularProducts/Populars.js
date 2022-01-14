@@ -8,7 +8,7 @@ class Populars {
 
                 htmlPopulars += `
                     <li class="products-element slide">
-                        <img class="products-element__img" src="../Products/${img}" />
+                        <img class="products-element__img" src="Products/${img}" />
                         <div class="products-element__name">${name}</div>
                         <div class="products-element__price">${price}</div>
                     </li>
@@ -36,6 +36,8 @@ $(function() {
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
+        prevArrow: '<span class="prev_arrow"><i class="fas fa-angle-left"></i></span>',
+        nextArrow: '<span class="next_arrow"><i class="fas fa-angle-right"></i></span>',
         responsive: [
             {
               breakpoint: 1024,
