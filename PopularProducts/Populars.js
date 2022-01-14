@@ -8,7 +8,7 @@ class Populars {
 
                 htmlPopulars += `
                     <li class="products-element slide">
-                        <img class="products-element__img" src="../Products/${img}" />
+                        <img class="products-element__img" src="Products/${img}" />
                         <div class="products-element__name">${name}</div>
                         <div class="products-element__price">${price}</div>
                     </li>
