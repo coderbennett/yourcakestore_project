@@ -40,7 +40,13 @@
     <body>
         <!---div & script for facebook sharing compatibility-->
         <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="6bxvnJqI"></script>
+        <script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1
+            &version={graph-api-version}
+            &appId={your-facebook-app-id}
+            &autoLogAppEvents=1" 
+        nonce="FOKrbAYI">
+        </script>
         <!--HEADER-->
         <header>
             <!---top navigation bar-->

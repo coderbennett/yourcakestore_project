@@ -43,7 +43,13 @@
     <body>
         <!---div & script for facebook sharing compatibility-->
         <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="6bxvnJqI"></script>
+        <script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1
+            &version={graph-api-version}
+            &appId={your-facebook-app-id}
+            &autoLogAppEvents=1" 
+        nonce="FOKrbAYI">
+        </script>
         <!--HEADER-->
         <header>
             <div id="blogJumbotron" class="jumbotron">
@@ -79,7 +85,7 @@
                         <br>
                         <p>We here at Your Cake Store are baker savvy and know how to
                         create any of our goods by alternative methods. Do you need us
-                        to whip up a flax egg for your vegan tiramisu? A pile of meat for
+                        to whip up a flax egg for your vegan tiramisu? A low-carb flour for
                         your paleo donut? We got you covered!
                         </p>
                         <br>
